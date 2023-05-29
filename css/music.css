@@ -4,6 +4,7 @@
   padding: 0 !important;
   background: transparent !important;
 }
+
 #an_music_bg {
   display: none;
   filter: blur(63px);
@@ -24,8 +25,9 @@ body:has(#anMusic-page) #an_music_bg {
   display: block;
 }
 
+/*播放界面背景颜色*/
 body:has(#anMusic-page) {
-  background: rgb(248,248,255);
+  background: rgb(255,240,245);
 }
 
 #anMusic-page meting-js .aplayer {
@@ -49,9 +51,6 @@ body:has(#anMusic-page) #nav-music {
   height: 75vh;
 }
 
-#waifu {
-  display:none
-}
 
 #anMusic-page ol > li:hover {
   background: #ffffff33;
@@ -82,22 +81,27 @@ body:has(#anMusic-page) #nav-music {
 #anMusic-page .aplayer-info .aplayer-music .aplayer-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
 }
 
 #anMusic-page .aplayer-info .aplayer-lrc {
-  height: 800%;
-  margin-top: 80px;
+  height: 1000%;
+  margin-top: 30px;
   mask-image: linear-gradient(to bottom, #000, #000, #000, #000, #000, #000, #000, #000, #000, #000, #0000, #0000);
 }
+
 #anMusic-page .aplayer-info .aplayer-lrc p {
-  font-size: 14px;
-  color: #fff;
+  color: rgb(0,0,0);
+  font-style: oblique;
+  font-family: "隶书";
+  font-size: 18px;
 }
+
 #anMusic-page .aplayer .aplayer-lrc:after,
 #anMusic-page .aplayer .aplayer-lrc:before {
   display: none;
 }
+
 
 /* 控制器 */
 #anMusic-page .aplayer-info .aplayer-controller {
@@ -108,6 +112,7 @@ body:has(#anMusic-page) #nav-music {
   right: 0;
   bottom: 50px;
 }
+
 #anMusic-page .aplayer-info .aplayer-controller .aplayer-bar-wrap {
   margin: 0 160px 0 150px;
 }
@@ -125,6 +130,7 @@ body:has(#anMusic-page) #nav-music {
   display: inline;
   position: fixed;
 }
+
 #anMusic-page .aplayer-info .aplayer-time {
   position: absolute;
   width: 100%;
@@ -182,6 +188,7 @@ body:has(#anMusic-page) #nav-music {
   background: rgb(255 255 255 / 20%);
   border-radius: 6px;
 }
+
 
 #anMusic-page ol > li span {
   color: var(--anzhiyu-white);
@@ -295,6 +302,7 @@ body:has(#anMusic-page) .aplayer .aplayer-info .aplayer-controller .aplayer-time
     right: 0;
     top: 100px;
   }
+
   #anMusic-page .aplayer-info .aplayer-lrc {
     margin-top: 40px;
     height: auto;
@@ -302,9 +310,11 @@ body:has(#anMusic-page) .aplayer .aplayer-info .aplayer-controller .aplayer-time
     min-height: 100%;
     mask-image: linear-gradient(to bottom, #000, #000, #000, #000, #0000, #0000);
   }
+
   #anMusic-page .aplayer-info .aplayer-lrc p.aplayer-lrc-current {
-    color: #33a673;
+    color: #000000;
   }
+
   /* 控制按键和进度条 */
   #anMusic-page .aplayer-info .aplayer-controller {
     width: 100%;
