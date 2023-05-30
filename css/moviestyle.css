@@ -1,0 +1,56 @@
+/* 设置视频容器的样式 */
+.video-container {
+    /* 设置容器的最大宽度 */
+    max-width: 800px;
+    /* 设置容器的内边距 */
+    padding: 20px;
+    /* 设置容器的背景颜色 */
+    background-color: #f9f9f9;
+    /* 设置容器的边框 */
+    border: 1px solid #ccc;
+    /* 设置容器的圆角 */
+    border-radius: 10px;
+}
+
+/* 设置视频标题的样式 */
+.video-title {
+    /* 设置标题的字体大小 */
+    font-size: 24px;
+    /* 设置标题的字体粗细 */
+    font-weight: bold;
+    /* 设置标题的文本居中 */
+    text-align: center;
+    /* 设置标题的下边距 */
+    margin-bottom: 20px;
+}
+
+/* 设置视频元素的样式 */
+video {
+    /* 设置宽度为 100%，以便视频自适应容器宽度 */
+    width: 100%;
+    /* 设置最大宽度为 800px */
+    max-width: 800px;
+    /* 设置视频元素的边框 */
+    border: 3px solid #333;
+    /* 设置视频元素的圆角 */
+    border-radius: 10px;
+    /* 设置视频元素的阴影 */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0);
+}
+
+/* 设置视频控件的样式 */
+video::-webkit-media-controls-panel {
+    /* 设置控件面板的背景颜色 */
+    background-color: rgba(0,0,0,0);
+}
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display,
+video::-webkit-media-controls-mute-button,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-fullscreen-button {
+    /* 设置控件元素的颜色 */
+    color: #fff;
+}
